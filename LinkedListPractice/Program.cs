@@ -17,6 +17,8 @@ namespace LinkedListPractice
                 Console.WriteLine("Please select the options below");
                 Console.WriteLine("1 -Linked list.");
                 Console.WriteLine("2- Stack ");
+                Console.WriteLine("3- Queue");
+                Console.WriteLine("4- Linked list node");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -30,10 +32,21 @@ namespace LinkedListPractice
                         Stack_Demo stack_Demo = new Stack_Demo();
                         stack_Demo.Element();
                         break;
+                    case 4:
+                        Console.WriteLine("Welcome to Linked List Node");
+                        Linked_List_Node linked_List_Node = new Linked_List_Node();
+                        linked_List_Node.Add(21);
+                        linked_List_Node.Display();
+                        linked_List_Node.Add(22);
+                        linked_List_Node.Display();
+                        linked_List_Node.Add(23);
+                        linked_List_Node.Display();
+                        break; 
+                    case 5:
+                        Console.WriteLine();
+
+                        break; 
                 }
-
-
-
             }
         }
     }
