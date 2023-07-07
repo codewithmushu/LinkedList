@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace LinkedListPractice
 {
-    public class Node
+    internal class Stack
     {
-
     }
 }

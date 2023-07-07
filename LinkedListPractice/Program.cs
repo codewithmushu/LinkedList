@@ -16,13 +16,19 @@ namespace LinkedListPractice
             {
                 Console.WriteLine("Please select the options below");
                 Console.WriteLine("1 -Linked list.");
+                Console.WriteLine("2- Stack ");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
                     case 1:
-                        Console.WriteLine("");
+                        Console.WriteLine("Welcome to Linked List");
                         Linked linked = new Linked();
                         linked.List();
+                        break;
+                    case 2:
+                        Console.WriteLine("Welcome to stack");
+                        Stack_Demo stack_Demo = new Stack_Demo();
+                        stack_Demo.Element();
                         break;
                 }
 
